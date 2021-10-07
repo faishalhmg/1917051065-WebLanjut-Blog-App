@@ -1,7 +1,7 @@
 <?= $this->extend('template');?>
 <?= $this->section('content');?>
 <div class="wrapper">
-
+<body class="hold-transition sidebar-mini layout-fixed">
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="/assets/adminlte/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
