@@ -42,7 +42,6 @@ $routes->setAutoRoute(true);
 // 	echo view('v_home');
 // 	echo view('layouts/footer');
 // });
-$routes->get('/admin', 'Templating::index');
 $routes->get('/posts', 'PostController::index');
 $routes->get('/register', 'Templating::register');
 $routes->post('/saveRegister', 'Templating::saveRegister');
@@ -56,6 +55,11 @@ $routes->get('/about',function(){
 	echo view('v_about');
 	echo view('layouts/footer');
 });
+
+$routes->get('/admin', 'Templating::index');
+$routes->get('/admin/posts', 'AdminPostsController::index');
+$routes->get('/admin/posts/create', 'AdminPostsController::create');
+$routes->post('/admin/posts/store', 'AdminPostsController::store');
 
 /*
  * --------------------------------------------------------------------
